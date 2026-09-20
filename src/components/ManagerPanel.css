@@ -1,0 +1,24 @@
+@import "./Adminpanel.css";
+
+.admin-header h1 {
+  color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-tabs .admin-tab-btn.active {
+  background: #1e40af;
+}
+
+.stat-card:hover::after {
+  background: #2563eb;
+}
+
+.quick-actions-card {
+  border-top: 4px solid #2563eb;
+}
+
+.admin-header h1 { color: #f87171; }
+.admin-tabs .admin-tab-btn.active { background: #b91c1c; }
+.quick-actions-card { border-top-color: #dc2626; }

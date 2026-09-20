@@ -1,0 +1,32 @@
+.about-container {
+  max-width: 860px;
+  margin: 50px auto 80px;
+  padding: 44px 40px;
+  background: #151b1e;
+  border: 1px solid #303a40;
+  border-radius: 12px;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.25);
+  text-align: left;
+}
+
+.about-container h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #303a40;
+  padding-bottom: 16px;
+}
+
+.about-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #aeb8bf;
+  margin-bottom: 20px;
+}
+
+.about-container p:last-child {
+  margin-bottom: 0;
+}

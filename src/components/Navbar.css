@@ -1,0 +1,116 @@
+.navbar-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  min-height: 28px;
+  padding: 0 24px;
+  color: #89969e;
+  background: #080b0d;
+  border-bottom: 1px solid #1f272b;
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.navbar-topbar strong { margin-left: auto; color: #e7edf0; font-weight: 700; }
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 40px;
+  background: rgba(8, 11, 13, 0.96);
+  border-bottom: 1px solid #252c30;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+.navbar-logo img {
+  display: block;
+  width: auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.navbar-logo a { display: flex; align-items: center; gap: 10px; }
+.navbar-wordmark { color: #f8fafc; font-size: 1.25rem; font-weight: 900; letter-spacing: -0.06em; }
+.navbar-wordmark span { color: #ef4444; }
+
+.navbar-logo img:hover {
+  transform: scale(1.04);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  color: #aeb8bf;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a[href="/cart"]:hover {
+  color: #ffffff;
+  background: #20282d;
+}
+
+.navbar-links li a[href="/cart"] {
+  color: #ffffff;
+  background: #1b2226;
+  border: 1px solid #39434a;
+}
+
+.navbar-links li a[href="/admin"],
+.navbar-links li a[href="/manager"] {
+  color: #f87171 !important;
+  background: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+
+.navbar-links li button {
+  padding: 9px 14px !important;
+  color: #fca5a5 !important;
+  background: transparent !important;
+  border: 1px solid rgba(239, 68, 68, 0.4) !important;
+  border-radius: 5px !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  cursor: pointer;
+}
+
+.navbar-links li button:hover {
+  color: #ffffff !important;
+  background: #dc2626 !important;
+}
+
+@media (max-width: 860px) {
+  .navbar-topbar span { display: none; }
+  .navbar-topbar strong { margin: 0; }
+  .navbar-container {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 18px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
