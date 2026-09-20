@@ -17,7 +17,7 @@ export default function Installation() {
         </section>
         <section>
           <h2>Book your appointment</h2>
-          <p>Call <strong>+1 (800) 123-4567</strong> or email <strong>support@carkit.com</strong>. Please have your order number, vehicle make/model and preferred date ready.</p>
+          <p>Call <strong>+961 81141587</strong> or email <strong>support@carkit.com</strong>. Please have your order number, vehicle make/model and preferred date ready.</p>
         </section>
       </div>
       <a className="hero-btn primary" href="/contact" style={{ display: "inline-block", marginTop: "24px" }}>Contact installation team</a>
